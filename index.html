@@ -2,92 +2,187 @@
 <html>
 
 <head>
-    <title>Art Gallery</title>
+    <title>Echoes of Tradition</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f1f2da;
+            color: #1B1404;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: .9rem;
+            text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.4), -1px -1px 2px rgba(0, 100, 255, 0.4), 0px -1px 2px rgba(0, 255, 0, 0.4);
+        }
+
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav {
+            text-transform: lowercase;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: #2b52ad;
+            margin-right: 20px;
+            margin-left: 20px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .painting {
+            margin: auto;
+            text-align: center;
+            font-size: 14px;
+            float: left;
+            width: 60%;
+        }
+
+        .painting img {
+            width: 120%;
+            height: auto;
+            float: right;
+        }
+
+        .description {
+            width: 40%;
+            font-size: 14px;
+            float: right;
+        }
+
+        .artwork-description {
+            width: 100%;
+            align-items: center;
+            overflow: hidden;
+            background: #f9f9f9;
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content p {
+            padding: 0;
+            padding-left: 10px;
+
+        }
+    </style>
 </head>
 
-<style>
-    body {
-        background-color: #f1f2da;
-        color: #1B1404;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: .9rem;
-        margin: .2rem 0 0 0;
-        text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.4), -1px -1px 2px rgba(0, 100, 255, 0.4), 0px -1px 2px rgba(0, 255, 0, 0.4);
-    }
-
-    header {
-        width: 100%;
-        max-width: 420px;
-        margin: auto;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    header h1 {
-        margin-bottom: 0px;
-    }
-
-    header p {
-        margin-top: 0px;
-    }
-
-    .nav {
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .nav a {
-        color: #2b52ad;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
-        margin-right: 20px;
-        margin-left: 20px;
-        text-decoration: none;
-    }
-
-    .painting {
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        width: 100%;
-        max-width: 420px;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .painting img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .painting a {
-        display: block;
-        color: #2b52ad;
-        font-family: 'Courier New', Courier, monospace;
-        text-decoration: none;
-    }
-</style>
-
 <body>
-    <header>
-        <h1>Art Gallery</h1>
-        <p>Several Circles</p>
-    </header>
+    <div id="wrapper">
+        <header>
+            <h1>Echoes of Tradition</h1>
+        </header>
 
-    <div class="nav">
-        <a href="./static/index.html">static!</a>
-        <a href="./animated_loop/">animated!</a>
-        <a href="./responsive/index.html">responsive!</a>
-    </div>
+        <div class="nav">
+            <a href="#location">Location!</a>
+            <a href="#Historical & Contemporary Uses">Historical & Contemporary Uses!</a>
+            <a href="#Immersion in the Space">Immersion in the Space!</a>
+            <a href="#Artistic Creation">Artistic Creation!</a>
+            <a href="#Artwork Description">Artwork Description!</a>
+        </div>
 
-    <div class="painting">
-        <img src="./static/images/1178px-Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg" alt="">
-        <a href="https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg">Vassily
-            Kandinsky, 1926 - Several Circles</a>
+        <div class="continer">
+            <div class="content">
+                <h2 class="location" id="location">Location</h2>
+                <p>Edmonds Beach in Washington</p>
+            </div>
+
+            <div class="content">
+                <h2 class="Historical & Contemporary Uses" id="Historical & Contemporary Uses">Historical & Contemporary
+                    Uses
+                </h2>
+                <p>Edmonds Beach, nestled along the shores of Puget Sound, has a rich history dating back thousands of
+                    years. It served as a vital site for the Coast Salish people, who utilized its resources for
+                    fishing, gathering shellfish, and fostering community ties. With the arrival of European settlers,
+                    the area witnessed a transformation into a hub for logging, shipping, and eventually, a resort town
+                    attracting tourists seeking its scenic beauty and recreational offerings.
+
+                    <br> <br>
+
+                    Today, Edmonds Beach continues to be a beloved recreational spot, frequented by locals and visitors
+                    alike. Its sandy shores and breathtaking views provide the perfect backdrop for activities such as
+                    beachcombing, picnicking, birdwatching, and leisurely strolls. Additionally, the beach serves as a
+                    venue for community events, educational programs, and environmental conservation efforts, reflecting
+                    its enduring significance as both a natural sanctuary and a cultural gathering place.
+                </p>
+            </div>
+
+            <div class="content">
+                <h2 class="Immersion in the Space" id="Immersion in the Space">Immersion in the Space</h2>
+                <p>Spending time at Edmonds Beach was a transformative experience, allowing me to immerse myself in its
+                    natural beauty and historical resonance. As I walked along the shoreline, the rhythmic sound of
+                    waves crashing against the shore provided a soothing backdrop, while seabirds soared overhead,
+                    casting fleeting shadows on the sand. Engaging with the space firsthand offered a deeper
+                    understanding of its significance, from its geological formations to its ecological diversity.</p>
+            </div>
+
+            <div class="content">
+                <h2 class="Artistic Creation" id="Artistic Creation">Artistic Creation</h2>
+                <p>Inspired by the rich tapestry of history and cultural heritage of Edmonds Beach, my artistic creation
+                    is a digital artwork. Drawing upon the artistic motifs and spiritual symbolism of the Coast Salish
+                    people, who have inhabited this land for thousands of years, the artwork serves as a tribute to
+                    their enduring legacy and profound connection to the natural world.
+
+                    <br><br>
+
+                    Utilizing intricate line art digitally overlaid on a photograph, my artwork seeks to evoke the
+                    spirit of native artwork, celebrating the beauty of traditional motifs such as salmon, orcas, and
+                    thunderbirds. These symbols hold deep significance in Coast Salish culture, representing themes of
+                    abundance, harmony, and spiritual power.
+
+                    <br><br>
+
+                    By incorporating elements of Native American aesthetics into the digital medium, I aim to honor the
+                    indigenous peoples who have stewarded this land for generations and to foster a greater appreciation
+                    for their cultural heritage. Through art, I hope to bridge the gap between past and present,
+                    inviting viewers to reflect on the enduring wisdom and resilience of indigenous communities in the
+                    face of historical and contemporary challenges.
+
+                    <br><br>
+
+                    This artwork draws inspiration from the conceptual strategies of Land Art practitioners,
+                    particularly Postcommodity and their project The Repellent Fence. Postcommodity's work explores
+                    themes of borderlands, indigenous sovereignty, and cultural resilience, using large-scale
+                    installations to provoke dialogue and reflection. Similarly, my artwork engages with the landscape
+                    as a site of cultural significance, using digital art to explore themes of heritage, identity, and
+                    environmental stewardship. By connecting the artistic traditions of Native American peoples with the
+                    broader discourse of Land Art, this artwork seeks to forge new connections and insights into the
+                    relationship between art, nature, and human experience.
+                </p>
+            </div>
+
+            <div class="artwork-description">
+                <div class="painting">
+                    <img src="./images/Untitled-1 (1).png" alt="image">
+                </div>
+
+                <div class="description">
+                    <h3 class="Artwork Description" id="Artwork Description">Artwork Description</h3>
+                    <p>"Echoes of Tradition" is a digital artwork inspired by the rich cultural heritage of Edmonds
+                        Beach. Using vibrant green line art reminiscent of Coast Salish motifs, the piece celebrates the
+                        enduring legacy of indigenous communities and their deep connection to the natural world.
+                        Drawing from Land Art influences, particularly Postcommodity's project The Repellent Fence, the
+                        artwork reflects on themes of cultural resilience and the intertwining of art, nature, and human
+                        experience.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
